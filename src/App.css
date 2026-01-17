@@ -538,67 +538,137 @@ body {
 
 /* ================= CONTACT ================= */
 .contact {
-  padding: clamp(1.5rem, 4vw, 2rem) 5vw clamp(2rem, 3vw, 3rem);
-  max-width: 56.25rem; /* 900px */
-  margin: 0 auto;
+  padding: 6rem 1rem;
+  display: flex;
+  justify-content: center;
 }
 
-.contact p {
-  color: var(--muted);
-  max-width: 30rem;
+.contact-card {
+  width: 100%;
+  max-width: 720px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
+.contact-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+  color: #b5b5c3;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* FORM */
 .contact-form {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 1.5rem;
 }
 
 .input-row {
   display: flex;
-  gap: 0.9rem;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 0.7rem 0.9rem;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(148, 163, 184, 0.5);
-  background: rgba(15, 23, 42, 0.6);
-  color: var(--text);
-  font: inherit;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: rgba(148, 163, 184, 0.9);
-}
-
-.contact-links {
-  margin-top: 1rem;
-  display: flex;
   gap: 1rem;
-  font-size: clamp(0.8rem, 0.9vw, 0.9rem);
+}
+
+.input-group {
+  position: relative;
+  flex: 1;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-group label {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 13px;
+  pointer-events: none;
+  transition: 0.3s ease;
+  background: transparent;
+}
+
+.input-group textarea + label {
+  top: 18px;
+  transform: none;
+}
+
+/* FLOATING LABEL */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 12px;
+  font-size: 11px;
+  background: #0b0f1a;
+  padding: 0 6px;
+  color: #4facfe;
+}
+
+/* BUTTON */
+.send-btn {
+  margin-top: 1rem;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #facc15, #fb923c);
+  color: #000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.send-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(250, 204, 21, 0.4);
+}
+
+/* LINKS */
+.contact-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .contact-links a {
-  color: var(--muted);
+  color: #c7c7d1;
+  font-size: 14px;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .contact-links a:hover {
-  color: var(--text);
+  color: #4facfe;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 .footer {
-  padding: 1.5rem 5vw 2rem;
   text-align: center;
-  font-size: clamp(0.7rem, 0.9vw, 0.8rem);
-  color: var(--muted);
+  padding: 2rem 1rem;
+  color: #777;
+  font-size: 13px;
 }
+
 
 .nav-links a.active-link,
 .nav-mobile a.active-link {

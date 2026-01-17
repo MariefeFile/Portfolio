@@ -127,21 +127,21 @@ const projects = [
     description:
       "IoT-based monitoring using ESP32, PZEM, Firebase and a Flutter dashboard.",
     stack: ["ESP32", "PZEM", "Firebase", "Flutter"],
-    link: "#",
+    link: "https://github.com/Noturius247/Smart_Energy_System",
   },
   {
     title: "WILDCAT FIX",
     description:
       "Responsive React UI with forms, filters, and modals for campus issue tracking.",
     stack: ["React", "Vite", "CSS Modules"],
-    link: "#",
+    link: "https://github.com/emmanueapura/WildcatFix",
   },
   {
     title: "WILDFIND SYSTEM ",
     description:
       "Frontend for managing lost tracking with search, filter and activity feed.",
     stack: ["React", "CSS", "REST"],
-    link: "#",
+    link: "https://github.com/AspireSpartan/WILDFind_webapp.git",
   },
 ];
 
@@ -586,29 +586,34 @@ function App() {
     <div className="skills-group">
       <h4>Frontend Development</h4>
       <div className="skill-item">
-        <img src="/icons/react.png" alt="React" className="skill-icon"/>
+        <img src="/public/react.png" alt="React" className="skill-icon"/>
         <span className="skill-name">React</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "90%" }}></div></div>
+        <span className="skill-percent">90%</span>
       </div>
       <div className="skill-item">
-        <img src="/icons/vite.png" alt="Vite" className="skill-icon"/>
+        <img src="/public/vite-logo.png" alt="Vite" className="skill-icon"/>
         <span className="skill-name">Vite</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "85%" }}></div></div>
+        <span className="skill-percent">85%</span>
       </div>
       <div className="skill-item">
-        <img src="/icons/html.png" alt="HTML" className="skill-icon"/>
+        <img src="/public/html.jpg" alt="HTML" className="skill-icon"/>
         <span className="skill-name">HTML</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "95%" }}></div></div>
+        <span className="skill-percent">95%</span>
       </div>
       <div className="skill-item">
-        <img src="/icons/css.png" alt="CSS" className="skill-icon"/>
+        <img src="/public/css.png" alt="CSS" className="skill-icon"/>
         <span className="skill-name">CSS</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "90%" }}></div></div>
+        <span className="skill-percent">90%</span>
       </div>
       <div className="skill-item">
-        <img src="/icons/javascript.png" alt="JavaScript" className="skill-icon"/>
+        <img src="/public/js.png" alt="JavaScript" className="skill-icon"/>
         <span className="skill-name">JavaScript</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "85%" }}></div></div>
+        <span className="skill-percent">85%</span>
       </div>
     </div>
 
@@ -616,29 +621,34 @@ function App() {
     <div className="skills-group">
       <h4>Embedded/IoT/Languages</h4>
       <div className="skill-item">
-        <img src="/icons/esp32.png" alt="ESP32" className="skill-icon"/>
+        <img src="/public/esp32.png" alt="ESP32" className="skill-icon"/>
         <span className="skill-name">ESP32</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "80%" }}></div></div>
+        <span className="skill-percent">80%</span>
       </div>
       <div className="skill-item">
-        <img src="/icons/cpp.png" alt="C / C++" className="skill-icon"/>
+        <img src="/public/C_C++.jpg" alt="C / C++" className="skill-icon"/>
         <span className="skill-name">C & C++ </span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "85%" }}></div></div>
+        <span className="skill-percent">85%</span>
       </div>
       <div className="skill-item">
-        <img src="/icons/cpp.png" alt="C / C++" className="skill-icon"/>
+        <img src="/public/22.png" alt="C / C++" className="skill-icon"/>
         <span className="skill-name"> C# & JavaScript </span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "85%" }}></div></div>
+        <span className="skill-percent">85%</span>
       </div>
       <div className="skill-item">
-        <img src="/icons/sensor.png" alt="Sensors" className="skill-icon"/>
+        <img src="/public/sensor.webp" alt="Sensors" className="skill-icon"/>
         <span className="skill-name">Sensors</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "75%" }}></div></div>
+        <span className="skill-percent">75%</span>
       </div>
       <div className="skill-item">
-        <img src="/icons/power.png" alt="Power Monitoring" className="skill-icon"/>
+        <img src="/public/pm.png" alt="Power Monitoring" className="skill-icon"/>
         <span className="skill-name">Power Monitoring</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "70%" }}></div></div>
+        <span className="skill-percent">70%</span>
       </div>
     </div>
 
@@ -647,76 +657,85 @@ function App() {
   <h4>Tools & Technologies</h4>
 
   <div className="skill-item">
-    <img src="/icons/firebase.png" alt="Firebase" className="skill-icon" />
+    <img src="/public/firebase.png" alt="Firebase" className="skill-icon" />
     <span className="skill-name">Firebase</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "85%" }}></div>
     </div>
+    <span className="skill-percent">85%</span>
   </div>
 
   <div className="skill-item">
-    <img src="/icons/git.png" alt="Git" className="skill-icon" />
+    <img src="/public/git.jpg" alt="Git" className="skill-icon" />
     <span className="skill-name">Git</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "80%" }}></div>
     </div>
+    <span className="skill-percent">80%</span>
   </div>
 
   <div className="skill-item">
-    <img src="/icons/github.png" alt="GitHub" className="skill-icon" />
+    <img src="/public/github.png" alt="GitHub" className="skill-icon" />
     <span className="skill-name">GitHub</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "85%" }}></div>
     </div>
+    <span className="skill-percent">85%</span>
   </div>
 
   <div className="skill-item">
-    <img src="/icons/nodejs.png" alt="Node.js" className="skill-icon" />
+    <img src="/public/node.png" alt="Node.js" className="skill-icon" />
     <span className="skill-name">Node.js</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "75%" }}></div>
     </div>
+    <span className="skill-percent">75%</span>
   </div>
 
   <div className="skill-item">
-    <img src="/icons/flutter.png" alt="Flutter" className="skill-icon" />
+    <img src="/public/flutter.png" alt="Flutter" className="skill-icon" />
     <span className="skill-name">Flutter</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "70%" }}></div>
     </div>
+    <span className="skill-percent">70%</span>
   </div>
 
   <div className="skill-item">
-    <img src="/icons/figma.png" alt="Figma" className="skill-icon" />
+    <img src="/public/figma.png" alt="Figma" className="skill-icon" />
     <span className="skill-name">Figma</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "80%" }}></div>
     </div>
+    <span className="skill-percent">80%</span>
   </div>
 
   <div className="skill-item">
-    <img src="/icons/canva.png" alt="Canva" className="skill-icon" />
+    <img src="/public/canva.jpg" alt="Canva" className="skill-icon" />
     <span className="skill-name">Canva</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "80%" }}></div>
     </div>
+    <span className="skill-percent">80%</span>
   </div>
 
   {/* NEW SKILLS */}
   <div className="skill-item">
-    <img src="/icons/filmora.png" alt="Filmora" className="skill-icon" />
+    <img src="/public/filmo.webp" alt="Filmora" className="skill-icon" />
     <span className="skill-name">Wondershare Filmora</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "75%" }}></div>
     </div>
+    <span className="skill-percent">75%</span>
   </div>
 
   <div className="skill-item">
-    <img src="/icons/adobe.png" alt="Adobe Editor" className="skill-icon" />
+    <img src="/public/PR.png" alt="Adobe Editor" className="skill-icon" />
     <span className="skill-name">Adobe Creative Suite</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "70%" }}></div>
     </div>
+    <span className="skill-percent">70%</span>
   </div>
 </div>
 
@@ -732,6 +751,7 @@ function App() {
       <div className="skill-bar">
         <div className="skill-fill" style={{ width: "90%" }}></div>
       </div>
+      <span className="skill-percent">90%</span>
     </div>
 
     <div className="skill-item">
@@ -740,6 +760,7 @@ function App() {
       <div className="skill-bar">
         <div className="skill-fill" style={{ width: "85%" }}></div>
       </div>
+      <span className="skill-percent">85%</span>
     </div>
 
     <div className="skill-item">
@@ -748,6 +769,7 @@ function App() {
       <div className="skill-bar">
         <div className="skill-fill" style={{ width: "85%" }}></div>
       </div>
+      <span className="skill-percent">85%</span>
     </div>
 
     <div className="skill-item">
@@ -756,6 +778,7 @@ function App() {
       <div className="skill-bar">
         <div className="skill-fill" style={{ width: "80%" }}></div>
       </div>
+      <span className="skill-percent">80%</span>
     </div>
 
     <div className="skill-item">
@@ -764,6 +787,7 @@ function App() {
       <div className="skill-bar">
         <div className="skill-fill" style={{ width: "90%" }}></div>
       </div>
+      <span className="skill-percent">90%</span>
     </div>
   </div>
 </div>
@@ -787,75 +811,87 @@ function App() {
                   </span>
                 ))}
               </div>
-              <a href={p.link} className="project-link">
-                View details →
-              </a>
+              <a
+  href={p.link}
+  className="project-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  View details →
+</a>
+
             </article>
           ))}
         </div>
       </section>
+{/* Contact */}
+<section id="contact" className="contact">
+  <div className="contact-card">
+    <div className="contact-header">
+      <h2>Let’s Connect</h2>
+      <p>
+        Open to junior embedded, frontend roles, or project collaborations.
+        Let’s build something impactful together.
+      </p>
+    </div>
 
-      {/* Contact */}
-      <section id="contact" className="contact">
-        <h2>Contact</h2>
-        <p>
-          Open to junior embedded, frontend roles, or project collaborations.
-          Reach out and let's build something.
-        </p>
-        <div className="contact-form">
-          <div className="input-row">
-            <input 
-              type="text" 
-              name="name"
-              placeholder="Name" 
-              value={formData.name}
-              onChange={handleInputChange}
-              required 
-            />
-            <input 
-              type="email" 
-              name="email"
-              placeholder="Email" 
-              value={formData.email}
-              onChange={handleInputChange}
-              required 
-            />
-          </div>
-          <textarea 
-            rows="4" 
-            name="message"
-            placeholder="Message" 
-            value={formData.message}
+    <form className="contact-form">
+      <div className="input-row">
+        <div className="input-group">
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
             onChange={handleInputChange}
-            required 
+            required
           />
-          <button onClick={handleSubmit} className="btn primary">
-            Send Message
-          </button>
+          <label>Name</label>
         </div>
-        <div className="contact-links">
-          <a href="mailto:youremail@example.com">Email</a>
-          <a
-            href="https://github.com/MariefeFile"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-        </div>
-      </section>
 
-      <footer className="footer">
-        © {new Date().getFullYear()} Marie Fe E. Tapales · Built with React
-        &amp; Vite
-      </footer>
+        <div className="input-group">
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            required
+          />
+          <label>Email</label>
+        </div>
+      </div>
+
+      <div className="input-group">
+        <textarea
+          rows="4"
+          name="message"
+          value={formData.message}
+          onChange={handleInputChange}
+          required
+        />
+        <label>Your Message</label>
+      </div>
+
+      <button type="button" onClick={handleSubmit} className="send-btn">
+        🚀 Send Message
+      </button>
+    </form>
+
+    <div className="contact-links">
+      <a href="mailto:youremail@example.com">📧 Email</a>
+      <a href="https://github.com/MariefeFile" target="_blank" rel="noreferrer">
+        💻 GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/marie-fe-tapales-286161350/" target="_blank" rel="noreferrer">
+        🔗 LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer className="footer">
+  © {new Date().getFullYear()} Marie Fe E. Tapales · Built with React & Vite
+</footer>
+
     </div>
   );
 }
