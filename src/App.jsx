@@ -554,7 +554,7 @@ function App() {
     <ul>
       <li>
         <a
-          href="/Marie_Fe_Tapales_Resume.pdf"
+          href="/Tapales__Resume.pdf"
           target="_blank"
           rel="noreferrer"
           className="certificate-link"
