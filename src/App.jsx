@@ -458,8 +458,8 @@ function App() {
       <div className="skill-item">
         <img src="/react.png" alt="React" className="skill-icon"/>
         <span className="skill-name">React</span>
-        <div className="skill-bar"><div className="skill-fill" style={{ width: "90%" }}></div></div>
-        <span className="skill-percent">90%</span>
+        <div className="skill-bar"><div className="skill-fill" style={{ width: "80%" }}></div></div>
+        <span className="skill-percent">80%</span>
       </div>
       <div className="skill-item">
         <img src="/vite-logo.png" alt="Vite" className="skill-icon"/>
@@ -470,14 +470,14 @@ function App() {
       <div className="skill-item">
         <img src="/html.jpg" alt="HTML" className="skill-icon"/>
         <span className="skill-name">HTML</span>
-        <div className="skill-bar"><div className="skill-fill" style={{ width: "95%" }}></div></div>
-        <span className="skill-percent">95%</span>
+        <div className="skill-bar"><div className="skill-fill" style={{ width: "80%" }}></div></div>
+        <span className="skill-percent">80%</span>
       </div>
       <div className="skill-item">
         <img src="/css.png" alt="CSS" className="skill-icon"/>
         <span className="skill-name">CSS</span>
-        <div className="skill-bar"><div className="skill-fill" style={{ width: "90%" }}></div></div>
-        <span className="skill-percent">90%</span>
+        <div className="skill-bar"><div className="skill-fill" style={{ width: "80%" }}></div></div>
+        <span className="skill-percent">80%</span>
       </div>
       <div className="skill-item">
         <img src="/js.png" alt="JavaScript" className="skill-icon"/>
@@ -517,8 +517,8 @@ function App() {
       <div className="skill-item">
         <img src="/pm.png" alt="Power Monitoring" className="skill-icon"/>
         <span className="skill-name">Power Monitoring</span>
-        <div className="skill-bar"><div className="skill-fill" style={{ width: "70%" }}></div></div>
-        <span className="skill-percent">70%</span>
+        <div className="skill-bar"><div className="skill-fill" style={{ width: "75%" }}></div></div>
+        <span className="skill-percent">75%</span>
       </div>
     </div>
 
@@ -557,18 +557,18 @@ function App() {
     <img src="/node.png" alt="Node.js" className="skill-icon" />
     <span className="skill-name">Node.js</span>
     <div className="skill-bar">
-      <div className="skill-fill" style={{ width: "75%" }}></div>
+      <div className="skill-fill" style={{ width: "80%" }}></div>
     </div>
-    <span className="skill-percent">75%</span>
+    <span className="skill-percent">80%</span>
   </div>
 
   <div className="skill-item">
     <img src="/flutter.png" alt="Flutter" className="skill-icon" />
     <span className="skill-name">Flutter</span>
     <div className="skill-bar">
-      <div className="skill-fill" style={{ width: "70%" }}></div>
+      <div className="skill-fill" style={{ width: "80%" }}></div>
     </div>
-    <span className="skill-percent">70%</span>
+    <span className="skill-percent">80%</span>
   </div>
 
   <div className="skill-item">
@@ -594,18 +594,18 @@ function App() {
     <img src="/filmo.webp" alt="Filmora" className="skill-icon" />
     <span className="skill-name">Wondershare Filmora</span>
     <div className="skill-bar">
-      <div className="skill-fill" style={{ width: "75%" }}></div>
+      <div className="skill-fill" style={{ width: "85%" }}></div>
     </div>
-    <span className="skill-percent">75%</span>
+    <span className="skill-percent">85%</span>
   </div>
 
   <div className="skill-item">
     <img src="/PR.png" alt="Adobe Editor" className="skill-icon" />
     <span className="skill-name">Adobe Creative Suite</span>
     <div className="skill-bar">
-      <div className="skill-fill" style={{ width: "70%" }}></div>
+      <div className="skill-fill" style={{ width: "75%" }}></div>
     </div>
-    <span className="skill-percent">70%</span>
+    <span className="skill-percent">75%</span>
   </div>
 </div>
 
@@ -628,9 +628,9 @@ function App() {
       <span className="skill-icon">🗣️</span>
       <span className="skill-name">Communication</span>
       <div className="skill-bar">
-        <div className="skill-fill" style={{ width: "85%" }}></div>
+        <div className="skill-fill" style={{ width: "80%" }}></div>
       </div>
-      <span className="skill-percent">85%</span>
+      <span className="skill-percent">80%</span>
     </div>
 
     <div className="skill-item">
@@ -655,9 +655,9 @@ function App() {
       <span className="skill-icon">🔄</span>
       <span className="skill-name">Adaptability & Flexibility</span>
       <div className="skill-bar">
-        <div className="skill-fill" style={{ width: "90%" }}></div>
+        <div className="skill-fill" style={{ width: "85%" }}></div>
       </div>
-      <span className="skill-percent">90%</span>
+      <span className="skill-percent">85%</span>
     </div>
   </div>
 </div>
