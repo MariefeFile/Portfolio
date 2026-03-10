@@ -145,6 +145,25 @@ const projects = [
   },
 ];
 
+const certificates = [
+  { title: "Planning & Designing Custom Software in AI", file: "/Marie_Fe_Tapales1.jpg" },
+  { title: "Analysis of Algorithms", file: "/Marie_Fe_Tapales2.jpg" },
+  { title: "Cybersecurity Workshop", file: "/Marie_Fe_Tapales3.pdf" },
+  { title: "Transition to Fabric for a Power BI Developer", file: "/Marie_Fe_Tapales4.pdf" },
+  { title: "Smart Living: Leveraging AI for Personal Productivity", file: "/Marie_Fe_Tapales5.pdf" },
+  { title: "Cybersecurity for Educators", file: "/Marie_Fe_Tapales6.pdf" },
+  { title: "Agile-Driven Customer Journeys", file: "/Marie_Fe_Tapales7.pdf" },
+  { title: "Exploring Quantum Computing: A Glimpse into the Future of Tech", file: "/Marie_Fe_Tapales8.jpg" },
+  { title: "DILAAB: Igniting Language Learning Through Project and Problem Based Approaches", file: "/Marie_Fe_Tapales9.pdf" },
+  { title: "Work Less with No-Code + AI", file: "/Marie_Fe_Tapales10.jpg" },
+  { title: "Future-Proof Your Business: The Economic Edge of QuickBooks Enterprise and AWS Integration", file: "/Marie_Fe_Tapales11.jpg" },
+  { title: "AI AND BEYOND: Artificial Intelligence and the Future of Learning and Work", file: "/Marie_Fe_Tapales12.pdf" },
+  { title: "Introduction to Ethical Hacking", file: "/Marie_Fe_Tapales13.jpg" },
+  { title: "Taming Software Complexity", file: "/Marie_Fe_Tapales14.jpg" },
+  { title: "Smarter Connections: Unlocking the Power of AI and IoT", file: "/Marie_Fe_Tapales15.jpg" }
+];
+
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -384,168 +403,19 @@ function App() {
           <div className="about-section">
             <h3>Certificates</h3>
             <ul>
-             <li>
-               <a
-                 href="/Marie_Fe_Tapales1.jpg"
-                 target="_blank"
-                 rel="noreferrer"
-                 className="certificate-link"
-                 >
-                 Planning & Designing Custom Software in AI
-                </a>
-              </li>
-
-              <li>
-               <a
-                 href="/Marie_Fe_Tapales2.jpg"
-                 target="_blank"
-                 rel="noreferrer"
-                 className="certificate-link"
-                  >
-                  Analysis of Algorithms 
-                  </a>
-              </li>
-
-              <li>
-                <a
-                   href="/Marie_Fe_Tapales3.pdf"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="certificate-link"
-                  >
-                   Cybersecurity Workshop 
-                </a>
-              </li>
-
-              <li>
-                <a
-                   href="/Marie_Fe_Tapales4.pdf"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="certificate-link"
-                  >
-                    Transition to Fabric for a Power BI Developer 
-                </a>
-              </li>
-
-
-              <li>
-                <a
-                   href="/Marie_Fe_Tapales5.pdf"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="certificate-link"
-                  >
-                   Smart Living: Leveraging AI for Personal Productivity 
-                </a>
-              </li>
-
-              <li>
-                <a
-                   href="/Marie_Fe_Tapales6.pdf"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="certificate-link"
-                  >
-                    Cybersecurity for Educators
-                </a>
-              </li>
-
-              <li>
-                <a
-                   href="/Marie_Fe_Tapales7.pdf"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="certificate-link"
-                  >
-                    Agile-Driven Customer Journeys
-                </a>
-              </li>
-
-              <li>
-                <a
-                   href="/Marie_Fe_Tapales8.jpg"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="certificate-link"
-                   >
-                    Exploring Quantum Computing: A Glimpse to into the Future of Tech 
-                </a>
-              </li>
-
-              <li>
-                <a
-                   href="/Marie_Fe_Tapales9.pdf"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="certificate-link"
-                   >
-                    DILAAB: Igniting Language Learning Through Project and Problem Based Approaches 
-                </a>
-              </li>
-
-              <li>
-                <a
-                   href="/Marie_Fe_Tapales10.jpg"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="certificate-link"
-                  >
-                    Work Less with No-Code + AI 
-                </a>
-              </li>
-              <li>
-                <a
-                   href="/Marie_Fe_Tapales11.jpg"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="certificate-link"
-                  >
-                    Future-Proof Your Business: The Economic Edge of QuickBooks Enterprise and AWS Intergration 
-                </a>
-              </li>
-              <li>
-                <a
-                   href="/Marie_Fe_Tapales12.pdf"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="certificate-link"
-                  >
-                    AI AND BEYOND: Artificial Intelligence and the Future of Learning and Work  AI for Higher Education
-                </a>
-              </li>
-
-              <li>
-                <a
-                   href="/Marie_Fe_Tapales13.jpg"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="certificate-link"
-                  >
-                    Introduction to Ethical Hacking
-                  </a>
-              </li>
-              <li>
-                <a
-                   href="/Marie_Fe_Tapales14.jpg"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="certificate-link"
-                  >
-                    Taming Software Complexity 
-                  </a>
-              </li>
-              <li>
-                <a
-                   href="/Marie_Fe_Tapales15.jpg"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="certificate-link"
-                  >
-                    Smarter Connections: Unlocking the Power of AI and IoT
-                </a>
-              </li>
-            </ul>
+  {certificates.map((cert, index) => (
+    <li key={index}>
+      <a
+        href={cert.file}
+        target="_blank"
+        rel="noreferrer"
+        className="certificate-link"
+      >
+        {cert.title}
+      </a>
+    </li>
+  ))}
+</ul>
 
 
             {/* RESUME & COVER LETTER */}
@@ -586,31 +456,31 @@ function App() {
     <div className="skills-group">
       <h4>Frontend Development</h4>
       <div className="skill-item">
-        <img src="/public/react.png" alt="React" className="skill-icon"/>
+        <img src="/react.png" alt="React" className="skill-icon"/>
         <span className="skill-name">React</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "90%" }}></div></div>
         <span className="skill-percent">90%</span>
       </div>
       <div className="skill-item">
-        <img src="/public/vite-logo.png" alt="Vite" className="skill-icon"/>
+        <img src="/vite-logo.png" alt="Vite" className="skill-icon"/>
         <span className="skill-name">Vite</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "85%" }}></div></div>
         <span className="skill-percent">85%</span>
       </div>
       <div className="skill-item">
-        <img src="/public/html.jpg" alt="HTML" className="skill-icon"/>
+        <img src="/html.jpg" alt="HTML" className="skill-icon"/>
         <span className="skill-name">HTML</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "95%" }}></div></div>
         <span className="skill-percent">95%</span>
       </div>
       <div className="skill-item">
-        <img src="/public/css.png" alt="CSS" className="skill-icon"/>
+        <img src="/css.png" alt="CSS" className="skill-icon"/>
         <span className="skill-name">CSS</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "90%" }}></div></div>
         <span className="skill-percent">90%</span>
       </div>
       <div className="skill-item">
-        <img src="/public/js.png" alt="JavaScript" className="skill-icon"/>
+        <img src="/js.png" alt="JavaScript" className="skill-icon"/>
         <span className="skill-name">JavaScript</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "85%" }}></div></div>
         <span className="skill-percent">85%</span>
@@ -621,31 +491,31 @@ function App() {
     <div className="skills-group">
       <h4>Embedded/IoT/Languages</h4>
       <div className="skill-item">
-        <img src="/public/esp32.png" alt="ESP32" className="skill-icon"/>
+        <img src="/esp32.png" alt="ESP32" className="skill-icon"/>
         <span className="skill-name">ESP32</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "80%" }}></div></div>
         <span className="skill-percent">80%</span>
       </div>
       <div className="skill-item">
-        <img src="/public/C_C++.jpg" alt="C / C++" className="skill-icon"/>
+        <img src="/C_C++.jpg" alt="C / C++" className="skill-icon"/>
         <span className="skill-name">C & C++ </span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "85%" }}></div></div>
         <span className="skill-percent">85%</span>
       </div>
       <div className="skill-item">
-        <img src="/public/22.png" alt="C / C++" className="skill-icon"/>
+        <img src="/22.png" alt="C / C++" className="skill-icon"/>
         <span className="skill-name"> C# & JavaScript </span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "85%" }}></div></div>
         <span className="skill-percent">85%</span>
       </div>
       <div className="skill-item">
-        <img src="/public/sensor.webp" alt="Sensors" className="skill-icon"/>
+        <img src="/sensor.webp" alt="Sensors" className="skill-icon"/>
         <span className="skill-name">Sensors</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "75%" }}></div></div>
         <span className="skill-percent">75%</span>
       </div>
       <div className="skill-item">
-        <img src="/public/pm.png" alt="Power Monitoring" className="skill-icon"/>
+        <img src="/pm.png" alt="Power Monitoring" className="skill-icon"/>
         <span className="skill-name">Power Monitoring</span>
         <div className="skill-bar"><div className="skill-fill" style={{ width: "70%" }}></div></div>
         <span className="skill-percent">70%</span>
@@ -657,7 +527,7 @@ function App() {
   <h4>Tools & Technologies</h4>
 
   <div className="skill-item">
-    <img src="/public/firebase.png" alt="Firebase" className="skill-icon" />
+    <img src="/firebase.png" alt="Firebase" className="skill-icon" />
     <span className="skill-name">Firebase</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "85%" }}></div>
@@ -666,7 +536,7 @@ function App() {
   </div>
 
   <div className="skill-item">
-    <img src="/public/git.jpg" alt="Git" className="skill-icon" />
+    <img src="/git.jpg" alt="Git" className="skill-icon" />
     <span className="skill-name">Git</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "80%" }}></div>
@@ -675,7 +545,7 @@ function App() {
   </div>
 
   <div className="skill-item">
-    <img src="/public/github.png" alt="GitHub" className="skill-icon" />
+    <img src="/github.png" alt="GitHub" className="skill-icon" />
     <span className="skill-name">GitHub</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "85%" }}></div>
@@ -684,7 +554,7 @@ function App() {
   </div>
 
   <div className="skill-item">
-    <img src="/public/node.png" alt="Node.js" className="skill-icon" />
+    <img src="/node.png" alt="Node.js" className="skill-icon" />
     <span className="skill-name">Node.js</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "75%" }}></div>
@@ -693,7 +563,7 @@ function App() {
   </div>
 
   <div className="skill-item">
-    <img src="/public/flutter.png" alt="Flutter" className="skill-icon" />
+    <img src="/flutter.png" alt="Flutter" className="skill-icon" />
     <span className="skill-name">Flutter</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "70%" }}></div>
@@ -702,7 +572,7 @@ function App() {
   </div>
 
   <div className="skill-item">
-    <img src="/public/figma.png" alt="Figma" className="skill-icon" />
+    <img src="/figma.png" alt="Figma" className="skill-icon" />
     <span className="skill-name">Figma</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "80%" }}></div>
@@ -711,7 +581,7 @@ function App() {
   </div>
 
   <div className="skill-item">
-    <img src="/public/canva.jpg" alt="Canva" className="skill-icon" />
+    <img src="/canva.jpg" alt="Canva" className="skill-icon" />
     <span className="skill-name">Canva</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "80%" }}></div>
@@ -721,7 +591,7 @@ function App() {
 
   {/* NEW SKILLS */}
   <div className="skill-item">
-    <img src="/public/filmo.webp" alt="Filmora" className="skill-icon" />
+    <img src="/filmo.webp" alt="Filmora" className="skill-icon" />
     <span className="skill-name">Wondershare Filmora</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "75%" }}></div>
@@ -730,7 +600,7 @@ function App() {
   </div>
 
   <div className="skill-item">
-    <img src="/public/PR.png" alt="Adobe Editor" className="skill-icon" />
+    <img src="/PR.png" alt="Adobe Editor" className="skill-icon" />
     <span className="skill-name">Adobe Creative Suite</span>
     <div className="skill-bar">
       <div className="skill-fill" style={{ width: "70%" }}></div>
@@ -800,8 +670,8 @@ function App() {
       <section id="projects" className="projects">
         <h2>Selected Projects</h2>
         <div className="project-grid">
-          {projects.map((p) => (
-            <article key={p.title} className="project-card">
+          {projects.map((p, index) => (
+            <article key={index} className="project-card">
               <h3>{p.title}</h3>
               <p className="project-desc">{p.description}</p>
               <div className="pill-row">
@@ -835,7 +705,7 @@ function App() {
       </p>
     </div>
 
-    <form className="contact-form">
+    <form className="contact-form" onSubmit={handleSubmit}>
       <div className="input-row">
         <div className="input-group">
           <input
@@ -871,13 +741,13 @@ function App() {
         <label>Your Message</label>
       </div>
 
-      <button type="button" onClick={handleSubmit} className="send-btn">
-        🚀 Send Message
-      </button>
+      <button type="submit" className="send-btn">
+  🚀 Send Message
+</button>
     </form>
 
     <div className="contact-links">
-      <a href="mailto:youremail@example.com">📧 Email</a>
+      <a href="mailto:mariefetapales@gmail.com">📧 Email</a>
       <a href="https://github.com/MariefeFile" target="_blank" rel="noreferrer">
         💻 GitHub
       </a>
